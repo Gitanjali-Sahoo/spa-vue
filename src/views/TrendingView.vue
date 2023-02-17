@@ -1,14 +1,15 @@
 <template>
+  <h2 class="text-center">Our Trending Books</h2>
   <div id="slider-app">
     <ImageSlider />
   </div>
-  <div id="footer">
+  <!-- <div id="footer">
     <TheFooter />
-  </div>
+  </div> -->
 </template>
 <script setup>
 import ImageSlider from "../components/ImageSlider.vue";
-import TheFooter from "../components/TheFooter.vue";
+// import TheFooter from "../components/TheFooter.vue";
 </script>
 <style scoped>
 #slider-app {
@@ -22,5 +23,6 @@ import TheFooter from "../components/TheFooter.vue";
   background-color: rgb(225, 220, 197);
   padding: 20px;
   width: 100%;
+  margin: auto 0;
 }
 </style>

@@ -17,7 +17,7 @@
         </tr>
       </thead>
       <tbody v-if="books !== null">
-        <tr v-for="book in books">
+        <tr v-for="book in books" v-bind:key="book.id">
           <th scope="row">{{ book.id }}</th>
           <td class="table-light">{{ book.name }}</td>
           <td>{{ book.Collections }}</td>

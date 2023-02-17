@@ -24,8 +24,11 @@ import { RouterLink, RouterView } from "vue-router";
             >
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link active" aria-current="page" to="/about"
-              >About Us</RouterLink
+            <RouterLink
+              class="nav-link active"
+              aria-current="page"
+              to="/trending"
+              >Trending</RouterLink
             >
           </li>
 
@@ -40,12 +43,6 @@ import { RouterLink, RouterView } from "vue-router";
               Browse
             </a>
             <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#">Trending</a>
-              </li>
-
-              <li><hr class="dropdown-divider" /></li>
-
               <li>
                 <a class="dropdown-item" href="#">Subjects</a>
               </li>

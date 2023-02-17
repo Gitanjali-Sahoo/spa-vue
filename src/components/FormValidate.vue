@@ -70,17 +70,17 @@ export default {
   },
   methods: {
     validateEmail(value) {
-      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
+      if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
         this.msg["email"] = "";
         this.disabled = [false, this.disabled[1]];
       } else {
-        this.msg["email"] = "Invalid Email Address";
+        // this.msg["email"] = "Invalid Email Address";
         this.disabled = [true, this.disabled[1]];
       }
     },
     validatePassword(value) {
-      let difference = 8 - value.length;
-      if (value.length < 8) {
+      let difference = 5 - value.length;
+      if (value.length < 5) {
         this.msg["password"] =
           "Must be 5 characters! " + difference + " characters left";
         this.disabled = [this.disabled[1], true];
